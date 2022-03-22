@@ -27,3 +27,13 @@ OpenSfM is BSD-style licensed, as found in the LICENSE file.  See also the Faceb
 
 [Terms of Use]: https://opensource.facebook.com/legal/terms (Facebook Open Source - Terms of Use)
 [Privacy Policy]: https://opensource.facebook.com/legal/privacy (Facebook Open Source - Privacy Policy)
+
+
+## Stolys Learning
+- Need to create docker image with shared volumes to be able to easily run new data sets and 
+- Get Conatiner Id: docker ps
+- Can pull files from docker using command: sudo docker cp <containerId>:/source/OpenSfM/<filepath> <destinationpath>
+- Can build new docker image using command: docker build -t <imagename> . 
+- Use Docker GUI to start container (easiest)
+- Can use CLI to create container: docker run -ti <imagename> /bin/sh -c "<command-to-run>"
+- Can run command in docker container using: docker exec -it <container_id_or_name> <command>
